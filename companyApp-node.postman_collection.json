@@ -1,0 +1,357 @@
+{
+	"info": {
+		"_postman_id": "489700c2-98ab-4ebf-b5b0-b4a102ca48eb",
+		"name": "companyApp-node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create member",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"user2\",\n\t\"email\":\"user2@user2.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/member",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Index member",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/member/",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"member",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show member by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/member/5e848f5b34d29e3098ec75a1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"member",
+						"5e848f5b34d29e3098ec75a1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update memberUserName",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"user3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/member/5e84a6b1488d1c078064b5ad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"member",
+						"5e84a6b1488d1c078064b5ad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete members",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/member/5e84a8982286bd29d4fc4ef9",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"member",
+						"5e84a8982286bd29d4fc4ef9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Aouthorize",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer kljsdchsycijbsefoeoirfcisrefc55",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/member",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"alanoud@anoud.com\",\n\t\"password\":\"myPassword\",\n\t\"phone\":\"0522456824\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"alanoud@anoud.com\",\n\t\"password\":\"myPassword\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create resources",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"resource1\",\n\t\"email\":\"resource1@resource1.com\",\n\t\"major\":\"BA\",\n\t\"phone\":\"04452554125\",\n\t\"city\":\"Riyadh\"\n\t\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/resource",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"resource"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "index resource",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/resource",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"resource"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show resource",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/resource/5e85cc5256fa612f848bc059",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"resource",
+						"5e85cc5256fa612f848bc059"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch resource",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"name\": \"resource4\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/resource/5e85cdc856fa612f848bc05d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"resource",
+						"5e85cdc856fa612f848bc05d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete resource",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/resource/5e85cdc856fa612f848bc05d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"resource",
+						"5e85cdc856fa612f848bc05d"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "40c5600a-f0a6-4033-9879-775a033789c6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "744ba38a-e9d1-4f55-8e6c-bd236f6b14d3",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
